@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Palace Event Center</title>
+    <link rel="stylesheet" href="event.css">
+</head>
+<body>
+
+    <!-- Checkbox powers the hamburger — no JS needed -->
+    <input type="checkbox" id="menu-toggle">
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.jfif" alt="Grand Palace logo">
+            <h1>Grand <span class="cent">Palace</span></h1>
+        </div>
+
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact"><button class="book">Book Now</button></a>
+        </nav>
+
+        <!-- Hamburger label — tied to checkbox, no JS needed -->
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+
+    <!-- Mobile nav — must sit right after header for CSS ~ selector to work -->
+    <nav class="mobile-nav">
+        <a href="#hero"    onclick="document.getElementById('menu-toggle').checked=false">Home</a>
+        <a href="#about"   onclick="document.getElementById('menu-toggle').checked=false">About</a>
+        <a href="#service" onclick="document.getElementById('menu-toggle').checked=false">Services</a>
+        <a href="#gallery" onclick="document.getElementById('menu-toggle').checked=false">Gallery</a>
+        <a href="#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a>
+        <a href="#contact" onclick="document.getElementById('menu-toggle').checked=false" class="mobile-book">Book Now</a>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Make Every Event Memorable</h1>
+            <h3>Luxury halls for weddings, birthdays, conferences, concerts, and special celebrations.</h3>
+            <a href="#contact"><button class="bye">Book Your Event</button></a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+        <h1 class="abt">About Us</h1>
+        <div class="abt-div">
+            <img src="images/picture1.jfif" alt="Grand Palace event hall interior">
+            <div>
+                <h2 class="elegant">Elegant Spaces For Every Occasion</h2>
+                <p class="grand">Grand Palace Event Center provides a beautiful, spacious, and fully equipped venue perfect for weddings, corporate events, birthday parties, seminars, and receptions.
+
+With modern lighting, air conditioning, premium decoration options, ample parking, and professional event management support, we help turn your events into unforgettable experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="service" class="service-section">
+        <h1 class="abt">Our Services</h1>
+        <div class="main-card">
+
+            <div class="service-card">
+                <div class="service-icon">💍</div>
+                <h3>Wedding Events</h3>
+                <p>Elegant halls and decoration services for dream weddings.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎂</div>
+                <h3>Birthday Parties</h3>
+                <p>Fun, colorful setups for birthdays of all sizes and ages.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏢</div>
+                <h3>Corporate Events</h3>
+                <p>Professional spaces for conferences, seminars and meetings.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎉</div>
+                <h3>Special Celebrations</h3>
+                <p>Naming ceremonies, graduations, receptions and more.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery">
+        <h2 class="abt">Gallery</h2>
+        <div class="gallery-card">
+            <img src="images/gala1.jfif" alt="Event hall setup">
+            <img src="images/gala4.jfif" alt="Wedding decoration">
+            <img src="images/gala2.jfif" alt="Birthday party setup">
+            <img src="images/gala3.jfif" alt="Corporate event">
+        </div>
+    </section>
+
+    <!-- BOOKING CTA -->
+    <section class="booking-section">
+        <div class="booking">
+            <h2>Reserve Your Date Today</h2>
+            <p>Contact us now to secure your preferred event date and get affordable packages tailored to your needs.</p>
+            <br>
+            <a href="#contact"><button class="bye">Get Started</button></a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <h2 class="abt">Contact Us</h2>
+        <div class="contact-details">
+            <p>📞 <strong>Phone:</strong> +234 800 000 0000</p>
+            <p>✉️ <strong>Email:</strong> info@grandpalace.com</p>
+            <p>📍 <strong>Location:</strong> Ibadan, Nigeria</p>
+            <p>⏰ <strong>Opening Hours:</strong> Mon – Sun | 8AM – 10PM</p>
+        </div>
+        <!-- Replace 2348000000000 with real WhatsApp number -->
+        <a href="https://wa.me/2348000000000?text=Hello%20Grand%20Palace!%20I%27d%20like%20to%20book%20an%20event."
+           class="whatsapp-btn"
+           target="_blank"
+           rel="noopener">
+            💬 Chat on WhatsApp
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Grand Palace Event Center. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
